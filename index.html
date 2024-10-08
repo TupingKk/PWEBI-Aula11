@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula011</title>
+</head>
+<body>
+    <script>
+        /*
+            
+            Tudo em minúsculo
+            objeto.metodo
+            
+            window.alert("boa noite!!");
+            alert("Olá mundo!!");
+            document.write("Boa noite galera!!!");
+            window.confirm("Confirmar a gravação?");
+            window.prompt("Digite o seu nome: ");
+            
+            Variável no Javascript não é tipada, ou seja, não preciso definir o tipo da variável
+            
+            var n;
+            n=10;
+            alert("Resultado: "+n);
+            n="nome";
+            alert("Resultado: "+n);
+            n=17.62;
+            alert("Resultado: "+n);
+            
+            // Vamos entrar com dois números e
+            // multiplicá-los?
+        
+
+        var n1, n2, total;
+        n1=prompt("Digite o primeiro número: ");
+        n2=prompt("Digite o segundo número: ");
+        total = n1 + n2;
+        alert("total: "+ total);
+
+        
+        // como resolver????
+        // Utilizando a função parseInte. Existe também
+        // a função parseFloat
+        // O objeto do parseInt é o Number
+                
+        var n1, n2, total;
+        n1=prompt("Digite o primeiro número: ");
+        n1=Number.parseInt(n1);
+        n2=prompt("Digite o primeiro número: ");
+        n2=parseInt(n2);
+        total = n1 + n2;
+        alert("total: "+ total);
+
+        */    
+
+        // Exercício 1: Dado 3 números, calcule a média
+
+        var n1, n2, n3, total
+        n1=prompt("Digite o primeiro número: ");
+        n1=parseFloat(n1);
+        n2=prompt("Digite o segundo número: ");
+        n2=parseFloat(n2);
+        n3=prompt("Digite o terceiro número: ");
+        n3=parseFloat(n3);
+        total = (n1 + n2 + n3)/ 3;
+        alert("Media: "+ total);
+        //alert("A média de "+ n1 + "com " + n2 + " com "+ n3 + " é igual a " + total);
+
+        //Trabalhando com literal string
+        //Inicia-se com crase (shift + tecla ao lado do P)
+        // a variavel deve ser ${nome da variável}
+        alert(`A média de ${n1} com ${n2} com ${n3} é igual a ${total}`);
+
+        //Vamos trabalhar com váriavel string
+        var nome;
+        nome = prompt("Digite o seu nome: ")
+        document.write(nome+'<br>');
+        document.write(nome.toUpperCase()+'<br>');
+        document.write(nome.toLowerCase()+'<br>');
+        document.write("Nome tem: "+ nome.length + " caracteres");
+
+        // Dado um número, exiba se é
+        // positivo ou negativo
+        // trabalhando com if
+
+        var n;
+        n=prompt("Digite um numero: ");
+        n=parseFloat(n);
+        if(n>0){
+            alert("número positivo");
+        } else{
+            alert("numero negativo");
+        }
+
+    </script>
+    
+</body>
+</html>
